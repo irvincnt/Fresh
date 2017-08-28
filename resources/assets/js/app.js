@@ -20,6 +20,9 @@ Vue.use(require('vue-resource'));
 Vue.component('timeline', require('./components/Timeline.vue'));
 Vue.component('posttweet', require('./components/Posttweet.vue'));
 
+Vue.component('passport-clients', require('./components/passport/Clients.vue'));
+Vue.component('passport-authorized-clients', require('./components/passport/AuthorizedClients.vue'));
+Vue.component('passport-personal-access-tokens', require('./components/passport/PersonalAccessTokens.vue'));
 
 const app = new Vue({
     el: '#app'
