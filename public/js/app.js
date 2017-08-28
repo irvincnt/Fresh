@@ -10977,7 +10977,7 @@ var Component = __webpack_require__(9)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "/Users/IrvinCnt/Develop/fresh/resources/assets/js/components/Posttweet.vue"
+Component.options.__file = "/Users/watr/Develop/Fresh/resources/assets/js/components/Posttweet.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Posttweet.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -10988,9 +10988,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-76daffeb", Component.options)
+    hotAPI.createRecord("data-v-41a63c0b", Component.options)
   } else {
-    hotAPI.reload("data-v-76daffeb", Component.options)
+    hotAPI.reload("data-v-41a63c0b", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -43524,7 +43524,7 @@ var Component = __webpack_require__(9)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "/Users/IrvinCnt/Develop/fresh/resources/assets/js/components/Timeline.vue"
+Component.options.__file = "/Users/watr/Develop/Fresh/resources/assets/js/components/Timeline.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Timeline.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -43535,9 +43535,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-60ef6a17", Component.options)
+    hotAPI.createRecord("data-v-6fbc29f7", Component.options)
   } else {
-    hotAPI.reload("data-v-60ef6a17", Component.options)
+    hotAPI.reload("data-v-6fbc29f7", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -43633,7 +43633,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         post: function post() {
             var _this = this;
 
-            this.$http.post('/tweets', { body: this.body }).then(function (response) {
+            this.$http.post('/tweets', { body: this.body,
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                }
+            }).then(function (response) {
                 _this.tweets.unshift(response.body);
                 _this.body = null;
             });
@@ -43692,7 +43697,7 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-76daffeb", module.exports)
+     require("vue-hot-reload-api").rerender("data-v-41a63c0b", module.exports)
   }
 }
 
@@ -43742,7 +43747,7 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-60ef6a17", module.exports)
+     require("vue-hot-reload-api").rerender("data-v-6fbc29f7", module.exports)
   }
 }
 
