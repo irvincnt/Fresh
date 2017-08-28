@@ -8,7 +8,7 @@ class TweetController extends Controller
 {
     public function index(Request $request)
     {
-        return $request->user()->tweets()->with('user')->get();
+        return $request->user()->tweets()->with('user')->orderBy('id', 'DESC')->get();
     }
 
     public function store(Request $request)

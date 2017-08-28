@@ -2,6 +2,7 @@
     <form action="#" v-on:submit.prevent="post" >
         <div class="form-group">
             <textarea name="" id="" cols="30" rows="2" class="form-control" v-model="body"></textarea>
+            <br>                   
             <button class="btn btn-default" type="submit">Post</button>
         </div>
     </form>

@@ -4,11 +4,9 @@
             <div class="col-md-8 col-md-offset-2">
                 <div class="panel panel-default">
                     <div class="panel-heading">TimeLine</div>
-
-
                     <div class="panel-body">
                     <posttweet :tweets="tweets"></posttweet> 
-                    <br>                   
+                    <hr class="my-4">
                         <div class="media" v-for="tweet in tweets">
                             <div class="media-left">
                                 <a href="">

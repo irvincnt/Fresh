@@ -43582,8 +43582,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
 
 
 
@@ -43686,7 +43684,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.body = $event.target.value
       }
     }
-  }), _vm._v(" "), _c('button', {
+  }), _vm._v(" "), _c('br'), _vm._v(" "), _c('button', {
     staticClass: "btn btn-default",
     attrs: {
       "type": "submit"
@@ -43722,7 +43720,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "tweets": _vm.tweets
     }
-  }), _vm._v(" "), _c('br'), _vm._v(" "), _vm._l((_vm.tweets), function(tweet) {
+  }), _vm._v(" "), _c('hr', {
+    staticClass: "my-4"
+  }), _vm._v(" "), _vm._l((_vm.tweets), function(tweet) {
     return _c('div', {
       staticClass: "media"
     }, [_vm._m(0, true), _vm._v(" "), _c('div', {
