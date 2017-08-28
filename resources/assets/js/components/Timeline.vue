@@ -5,7 +5,10 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">TimeLine</div>
 
+
                     <div class="panel-body">
+                    <posttweet :tweets="tweets"></posttweet> 
+                    <br>                   
                         <div class="media" v-for="tweet in tweets">
                             <div class="media-left">
                                 <a href="">
@@ -25,12 +28,17 @@
 </template>
 
 <script>
+    import Posttweet from './Posttweet.vue'
+
     export default {
         data () {
             return {
                 tweets: []
             }
         },
+        components: [
+            Posttweet
+        ],
         mounted() {
             this.$http.get('/tweets').then((response) => {
                 this.tweets = response.body

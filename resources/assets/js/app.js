@@ -18,6 +18,8 @@ Vue.use(require('vue-resource'));
  */
 
 Vue.component('timeline', require('./components/Timeline.vue'));
+Vue.component('posttweet', require('./components/Posttweet.vue'));
+
 
 const app = new Vue({
     el: '#app'
